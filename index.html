@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/navbar.css" />
+    <link rel="stylesheet" href="./src/styles/reusable.css" />
+    <link rel="stylesheet" href="./src/styles/swiper.css" />
+    <link rel="stylesheet" href="./src/styles/home.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Darklens - Home</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <div class="logo">
+          <a href="index.html">
+            <img src="./src/img/brand.png" alt="Logo" />
+          </a>
+        </div>
+
+        <div class="icon">
+          <div class="open" id="openButton" role="button">
+            <i class="bi bi-list" style="font-size: 2rem"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="menu" id="menu">
+      <div class="container">
+        <div class="subnav">
+          <div class="darklens">
+            <p class="logo-name" id="logoName">Darklens</p>
+          </div>
+
+          <div class="close" id="closeButton">
+            <i class="bi bi-x-lg" style="font-size: 2rem"></i>
+          </div>
+        </div>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Sobre</a></li>
+          <li><a href="services.html">Serviços</a></li>
+          <li><a href="gallery.html">Galeria</a></li>
+          <li><a href="contact.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main class="wrapper">
+      <swiper-container
+        class="carousel"
+        style="
+          --swiper-theme-color: #fff;
+          --swiper-pagination-bullet-inactive-color: #fff;
+          --swiper-pagination-bottom: 100px;
+        "
+        pagination="true"
+        pagination-dynamic-bullets="true"
+      >
+        <swiper-slide>Slide 1</swiper-slide>
+        <swiper-slide>Slide 2</swiper-slide>
+        <swiper-slide>Slide 3</swiper-slide>
+      </swiper-container>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="./src/scripts/navbar.js"></script>
+  </body>
+</html>
