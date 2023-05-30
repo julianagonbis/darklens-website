@@ -1,0 +1,81 @@
+.header {
+  position: absolute;
+  height: 140px;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.nav .logo img {
+  width: 40px;
+}
+
+.nav .open {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  background-color: #000;
+  z-index: 100;
+  width: 100%;
+  top: -100vh;
+  transition: cubic-bezier(0.86, 0, 0.07, 1) 1s;
+}
+
+.menu.active {
+  top: 0;
+}
+
+.menu .container {
+  align-items: center;
+  height: 100vh;
+}
+
+.menu ul {
+  margin-top: 10%;
+}
+
+.menu ul li a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 48px;
+  color: #ffffffb0;
+  transition: 0.5s;
+}
+
+.menu ul li a:hover {
+  color: #ffffff;
+}
+
+.menu .close {
+  cursor: pointer;
+  padding: 8px;
+}
+
+.menu .darklens .logo-name {
+  font-size: 56px;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #ffffffe7;
+  margin-left: -50vw;
+  transition: cubic-bezier(0.86, 0, 0.07, 1) 1s;
+}
+
+.menu .darklens .logo-name.active {
+  margin-left: 0;
+}
+
+.menu .subnav {
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

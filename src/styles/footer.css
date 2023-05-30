@@ -1,0 +1,41 @@
+footer.footer {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: #050505;
+}
+
+.footer .logo img {
+  width: 64px;
+}
+
+.footer hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: #101010;
+}
+
+.footer .shortcuts ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.footer .shortcuts ul li a {
+  color: #636363;
+  transition: 0.3s;
+}
+
+.footer .shortcuts ul li a:hover {
+  color: #d6d6d6;
+}
+
+.footer .copyright p {
+  color: #383838;
+  font-size: 12px;
+}

@@ -1,0 +1,31 @@
+/* Reset CSS */
+/*----------------------------------------------*/
+
+/* Definir a margem e o preenchimento como 0 para todos os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Definir a família de fontes e o tamanho de fonte padrão */
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  position: relative;
+  color: #fff;
+}
+
+/* Remover a decoração de links */
+a {
+  text-decoration: none;
+}
+
+/* Remover as listas de marcadores */
+ul,
+ol {
+  list-style: none;
+}
+
+/*----------------------------------------------*/
+/* Fim do Reset CSS */

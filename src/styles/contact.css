@@ -1,0 +1,106 @@
+body {
+  background-color: #000000;
+}
+
+.wrapper {
+  padding-top: 140px;
+  padding-bottom: 80px;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.wrapper .content {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 4rem;
+  align-items: flex-end;
+}
+
+.wrapper .content .text,
+.wrapper .content .form {
+  flex: 1;
+}
+
+.wrapper .content .text p .spaced-word {
+  margin-left: 10%;
+}
+
+.wrapper .content .text p {
+  font-size: 7rem;
+  line-height: 7rem;
+  color: #000;
+  text-shadow: -1px -1px 0 #3d3d3d, 1px -1px 0 #3d3d3d, -1px 1px 0 #3d3d3d,
+    1px 1px 0 #3d3d3d;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.wrapper .content .text p .highlight {
+  text-shadow: -1px -1px 0 #7a7a7a, 1px -1px 0 #7a7a7a, -1px 1px 0 #7a7a7a,
+    1px 1px 0 #7a7a7a;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input[type='text'],
+.form select,
+.form textarea {
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 32px;
+  padding: 16px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #1e1e1e;
+  color: #fff;
+  flex: 1;
+  max-width: 100%;
+}
+
+.form textarea {
+  resize: none;
+  min-height: 160px;
+}
+
+.form .input-group {
+  display: flex;
+  gap: 32px;
+  flex: 1;
+}
+
+.form .buttons {
+  display: flex;
+  gap: 32px;
+  align-self: flex-end;
+}
+
+.clean-button,
+.submit-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+::placeholder {
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .form .input-group {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 468px) {
+  .wrapper .content .text p {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}
