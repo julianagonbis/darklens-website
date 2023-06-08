@@ -9,6 +9,13 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+H3 {
+  font-size: 3rem;
+  font-weight: 300;
+  opacity: 0.8;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', sans-serif;
+}
 
 .wrapper .content {
   display: flex;
@@ -41,6 +48,11 @@ body {
   inset: 0;
   z-index: -1;
   border-radius: 16px;
+  filter: grayscale(2);
+}
+.services-cards-container .service-card:hover img {
+  filter: grayscale(0);
+  transition: 0.5s;
 }
 
 .services-cards-container .service-card h4 {
